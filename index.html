@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/form.css">
+    <title> BlogPoster, a blog creation website.</title>
+</head>
+
+<body>
+    <header class="header"> 
+        <h1> BLOGPOSTER </h1>
+    </header>
+
+    <div class="Hero">
+        <!-- ADD PICTURE HERE OF BLOGPOSTER-->
+    </div>
+<!-- User Blog Creation Area-->
+    <main class="content">
+        <h2> Make a blog! </h2>
+        <form>
+            <ul>
+                <li>
+                    <label for="username">What's your Username?</label>
+                    <textarea id="user-msg" name="username"></textarea>
+                </li>
+                <li>
+                    <label for="title">Give it a Title!</label>
+                    <textarea id="title-msg" name="title"></textarea>
+                </li>
+                <li>
+                    <label for="blog">Write what you wanna write!</label>
+                    <textarea id="blog-msg" name="blog-content"></textarea>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <script src="./Assets/js/form.js"></script>
+</body>
+</html>
