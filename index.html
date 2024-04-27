@@ -12,30 +12,32 @@
         <h1> BLOGPOSTER </h1>
     </header>
 
-    <div class="Hero">
-        <!-- ADD PICTURE HERE OF BLOGPOSTER-->
-    </div>
 <!-- User Blog Creation Area-->
-    <main class="content">
-        <h2> Make a blog! </h2>
-        <form>
+    <main id="content">
+        <div id="Hero">
+            <img src="./Assets/images/Dolphins.jpg" alt="Two dolphins jumping in the ocean" id="dolphins">
+        </div>
+        <form id="form">
+                <h2> Make a blog! </h2>
             <ul>
                 <li>
-                    <label for="username">What's your Username?</label>
-                    <textarea id="user-msg" name="username"></textarea>
+                    <label for="username" class="text">What's your Username?</label>
+                    <textarea id="user-msg" name="username" class="textbox"></textarea>
                 </li>
                 <li>
-                    <label for="title">Give it a Title!</label>
-                    <textarea id="title-msg" name="title"></textarea>
+                    <label for="title" class="text">Give it a Title!</label>
+                    <textarea id="title-msg" name="title" class="textbox"></textarea>
                 </li>
                 <li>
-                    <label for="blog">Write what you wanna write!</label>
-                    <textarea id="blog-msg" name="blog-content"></textarea>
+                    <label for="blog" class="text">Write what you wanna write!</label>
+                    <textarea id="blog-msg" name="blog-content" class="textbox"></textarea>
                 </li>
             </ul>
+            <div>
             <button id="submit">Submit</button>
+            <button id="just-lookin">Just Lookin'</button>
+            </div>
         </form>
-        <button id="just-lookin">Just Lookin'</button>
     </main>
     <script src="./Assets/js/form.js"></script>
 </body>

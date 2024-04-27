@@ -6,21 +6,31 @@
     <link rel="stylesheet" href="./Assets/css/blog.css">
     <title> BlogPoster, a blog creation website.</title>
 </head>
+
+<!--Everything within the body will be controlled by light or dark mode-->
 <body>
-    <header class="header"> 
-        <h1> BLOGPOSTER </h1>
-    </header>
-    <section id="recent-blogs">
-        <h2> Recent Blogs </h2>
-    </section>
-    <script src="./Assets/js/blog.js"></script>
+    <div class="container light">
+        <header class="header"> 
+            <h1> BLOGPOSTER </h1>
+        </header>
+        <div>
+            <button id="theme">Change Theme</button>
+        </div>
+        <section id="recent-blogs">
+            <h2> Recent Blogs </h2>
+        </section>
+        <!--Here is where the posts will go-->
+        <ul id="collector">
+        </ul>
+        <script src="./Assets/js/blog.js"></script>
+        <footer class="footer">
+            <p>
+                Made with blood sweat and tears by Bung
+            </p>
+            <p>
+        <a href="https://github.com/BunggoyLearn">/Check out my repo!</a>
+            </p>
+          </footer>
+    </div>
   </body>
-  <footer class="footer">
-    <p>
-        Made with blood sweat and tears by Bung
-    </p>
-    <p>
-<a href="https://github.com/BunggoyLearn">Check out my repo!</a>
-    </p>
-  </footer>
   </html>

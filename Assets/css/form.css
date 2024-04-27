@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    background-color: rgb(210, 228, 231);
+}
+
+h1 {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    float: right;
+    margin-right: 300px;
+}
+
+#hero,#content {
+    display: flex;
+    float: left;
+    margin: 10px;
+}
+
+#dolphins {
+    border-radius: 8px;
+    max-height: 80%;
+    max-width: 80%;
+    margin-left: 60px;
+}
+
+#form {
+    background-color:	#ecf1e3;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: 60px auto;
+    padding: 20px;
+    height: 50%;
+    width: 40%;
+    display: block;
+    margin-right: 50px;
+}
+
+ul {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox {
+    background-color: #a39a99;
+    border: 2px;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+#submit, #just-lookin {
+    display: flex;
+    float: left;
+    margin: 10px;
+}

@@ -1,3 +1,6 @@
+const themeButton = document.getElementById('theme');
+const container = document.querySelector('.container');
+
 //Parses data onto new page, gathers index number by subtracting one from length
 
 function renderBlogData() {
@@ -14,12 +17,12 @@ function renderBlogData() {
 
     if (cookedblog !== null) {
 
-//Create a new div for each object from previous loop, give it a unique id that counts up
+//Create a new div for each object from previous loop, give it a unique id that counts up and a class that can be used for CSS.
 
-        const newDiv = document.createElement('div');
-        newDiv.setAttribute('id',`post-${lastIndex}`);
-        newDiv.setAttribute('class','posts');
-        document.body.appendChild(newDiv);
+        const newLi = document.createElement('li');
+        newLi.setAttribute('id',`post-${lastIndex}`);
+        newLi.setAttribute('class','posts');
+        document.getElementById('collector').appendChild(newLi);
 
 //Nested for loop, another basic counter this time implementing i. goes from 0-2 and places the object's children where they need to go with the styles they need.
 
@@ -28,20 +31,20 @@ function renderBlogData() {
 
             if (choppedblog == 0) {
                const user = document.createElement('h4');
-               user.textContent = cookedblog.username;
-               document.body.appendChild(user);
+               user.textContent = (`User: ${cookedblog.username}`);
+               document.getElementById(`post-${lastIndex}`).appendChild(user);
             }
 
             else if (choppedblog == 1) {
                 const postTitle = document.createElement('h3');
                 postTitle.textContent = cookedblog.title;
-                document.body.appendChild(postTitle);
+                document.getElementById(`post-${lastIndex}`).appendChild(postTitle);
             }
 
             else {
                 const blogtent = document.createElement('p');
                 blogtent.textContent = cookedblog.blog;
-                document.body.appendChild(blogtent);
+                document.getElementById(`post-${lastIndex}`).appendChild(blogtent);
             }
         }
     }
@@ -56,3 +59,18 @@ function init() {
 
 init();
 
+//Light and dark mode button
+
+let mode = 'light';
+
+themeButton.addEventListener('click', function () {
+    if (mode === 'dark') {
+        mode = 'light';
+        container.setAttribute('class', 'light');
+      }
+      // If mode is light, apply dark background
+      else {
+        mode = 'dark';
+        container.setAttribute('class', 'dark');
+      }
+});
